@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf") format("ttf");
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar{
+    background-color: #5966D9;
+    padding: 1rem;
+}
+
+    .navbar-title{
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 1.6rem;
+    }
+
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .navbar-item {
+        display: inline;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .navbar-item > a:link{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .navbar-item > a:visited{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .navbar-item > a:hover{
+        color: #d99559;
+        text-decoration: underline;
+    }
+
+    .navbar-item > a:active{
+        color: #d99559;
+        text-decoration: underline;
+    }
+
+.circularImage {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+
+.firstFlex{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.firstFlex > *{
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+
