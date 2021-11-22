@@ -87,10 +87,33 @@ input[type=checkbox] { /* Checkbox hack; hides checkbox from view */
     }
 
 @media screen and (max-width: 550px) {
-    /* Checkbox hack; Prevents open checkbox from displaying content when scaled above 550px wide screen */
+    /* Checkbox hack; Prevents open checkbox from displaying 
+        content when scaled above 550px wide screen */
     input[type=checkbox]:checked ~ .navbar-item {
         display: block;
     }
+}
+
+/* CONTENT */
+.container {
+    width: 100%;
+}
+
+section {
+    display: block;
+}
+
+section > .text-content {
+    padding: 1rem;
+    text-align: justify;
+}
+
+section > .image-content > img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 550px) {
@@ -109,6 +132,38 @@ input[type=checkbox] { /* Checkbox hack; hides checkbox from view */
 
     .nav-button{
         display:none;
+    }
+
+    /* CONTENT */
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+    
+    section > .text-content {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    section > .image-content {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    section:nth-child(even) > .text-content {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    section:nth-child(even) > .image-content {
+        grid-column: 1;
+        grid-row: 1;
     }
 
 }
