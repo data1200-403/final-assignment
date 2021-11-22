@@ -1,12 +1,16 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Bold.ttf") format("ttf");
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: bold;
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("../fonts/Lato-Regular.ttf") format("ttf");
+    src: url("../fonts/Lato-Regular.ttf");
 }
+/*
+background-color: #5966D9;
+*/
 
 html {
     font-size: 16px;
@@ -17,50 +21,84 @@ body {
     font-size: 1.2rem;
 }
 
-.navbar{
-    background-color: #5966D9;
-    padding: 1rem;
+h1, h2, h3, h4, h5 {
+    font-family: Montserrat, sans-serif;
 }
 
-    .navbar-title{
-        text-align: center;
-        color: #FFFFFF;
-        font-size: 1.6rem;
-    }
+/* NAVBAR */
 
-    .navbar-list {
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5966D9;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+}
+
+.navbar-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-item {
+    display:none;
+    position: absolute;
+    background-color: #5966D9;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+.navbar-item a:link{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.navbar-item a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.navbar-item a:hover{
+    color: #d99559;
+    text-decoration: underline;
+}
+.navbar-item a:active{
+    color: #d99559;
+    text-decoration: underline;
+}
+
+input[type=checkbox]:checked ~ .navbar-item {
+    display: block;
+}
+
+
+@media (min-width: 700px){
+    .navbar{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #5966D9;
+    }
+    .navbar-list a{
+        color: #FFFFFF;
+    }
+    .navbar-item{
         display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        padding: 0;
-        justify-content: center;
     }
 
-    .navbar-item {
-        display: inline;
-        font-size: 1.4rem;
-        text-align: center;
+    .nav-button{
+        display:none;
     }
-
-    .navbar-item > a:link{
-        color: #FFFFFF;
-        text-decoration: none;
+    .navbar-item:hover {
+        display: inline-block;
+        background-color: #5966D9;
     }
-
-    .navbar-item > a:visited{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-
-    .navbar-item > a:hover{
-        color: #d99559;
-        text-decoration: underline;
-    }
-
-    .navbar-item > a:active{
-        color: #d99559;
-        text-decoration: underline;
-    }
+}
 
 .circularImage {
     border-radius: 50%;
@@ -68,7 +106,6 @@ body {
     width: 200px;
     object-fit: cover;
 }
-
 
 .firstFlex{
     display: flex;
@@ -83,5 +120,3 @@ body {
     margin-right: auto;
     padding: 1rem;
 }
-
-

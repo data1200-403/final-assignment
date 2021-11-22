@@ -11,17 +11,23 @@
 <body>
     <header>
         <nav class="navbar">
+            <!--Group title-->
             <div class="navbar-title">
                 Error 403
             </div>
-
+            <!--Invisible checkbox bodge-->
             <ul class="navbar-list">
-                <li class="navbar-item"><a href="#">Home</a></li>
-                <li class="navbar-item"><a href="#">Accessibility</a></li>
-                <li class="navbar-item"><a href="#">Work</a></li>
-                <li class="navbar-item"><a href="#">Topical</a></li>
-                <li class="navbar-item"><a href="#">Fun</a></li>
-            </ul>
+            <input type="checkbox" id="checkbox-toggle" />
+            <label for="checkbox-toggle" class="nav-button">&#9776;</label>
+                <!--Navbar items-->
+                <div class="navbar-item">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./accessibility.html">Accessibility</a></li>
+                    <li><a href="./life.html">Life</a></li>
+                    <li><a href="./topical.html">Topical</a></li>
+                    <li><a href="./fun.html">Fun</a></li>
+                </div>
+            </ul>     
         </nav>
     </header>
     <div class="firstFlex">    
@@ -32,7 +38,5 @@
         </p>
         <img class="circularImage" src="./assets/images/oslomet.jpg" alt="Image of the Oslomet reversed V logo and a tall campus building">
     </div>
-
-    
 </body>
 </html>
