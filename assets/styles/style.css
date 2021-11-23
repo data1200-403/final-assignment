@@ -10,7 +10,7 @@
 /*
 background-color: #5966D9;
 */
-
+/* GENERAL CONFIGURATION */
 html {
     font-size: 16px;
 }
@@ -24,74 +24,114 @@ h1, h2, h3, h4, h5 {
     font-family: Montserrat, sans-serif;
 }
 
-/* NAVBAR */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #5966D9;
-    color: #FFFFFF;
-    text-align: right;
-    width: 100%;
-    height: 60px;
+p {
+    max-width: 70ch;
 }
 
-.navbar-title { /* Title of the navbar: Group 403 */
-    font-size: 2rem;
+a {
     font-weight: 700;
-    margin-left: 0.75rem;
+    text-decoration-style: solid;
+    color: black;
 }
 
-.navbar-list {/*  */
-    list-style-type: none;
-    padding: 0;
+a:hover {
+    color: #c5192d;
+    text-decoration-style: dashed;
 }
 
-input[type=checkbox] { /* Checkbox hack; hides checkbox from view */
+/* MISCELLANEOUS */
+.grayscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/* NAVBAR */
+header{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-interesting {
+    background-image: url("https://cdn.discordapp.com/attachments/907306744269668353/912680752825630760/Japanese_bomb_explodes_off_the_port_side_of_USS_Enterprise_CV-6_during_the_Battle_of_the_Santa_Cruz_Islands_on_26_October_1942_80-G-30198.jpg");
+}
+
+.nav {
+    border-bottom: 3px solid #000000;
+    padding: 1rem;
+    background-color: #FFFFFF;
+}
+
+.nav-toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
+}
+
+.close {
     display: none;
 }
 
-.nav-button svg { /* SVG code for the hamburger */
-    margin-top: 0.45rem;
-    margin-right: 0.85rem;
-    fill: #FFFFFF;
+.menu {
+    margin-top: 0.2rem;
 }
 
-.navbar-item { /* List of navbar items */
-    display:none;
-    position: absolute;
-    background-color: #5966D9;
-    left: 0;
-    right: 0;
-    width: 100%;
+[type="checkbox"] {
+    display: none;
 }
-.navbar-item li {
-    padding: 0.25rem 0.85rem 0.25rem 0;
-}
-/* Formatting for links */
-    .navbar-item a:link {
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-    .navbar-item a:visited {
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-    .navbar-item a:hover {
-        color: #FFFFFF;
-        border-bottom: 3px #FFFFFF solid;
-    }
-    .navbar-item a:active {
-        color: #FFFFFF;
-        text-decoration: underline;
-    }
 
-@media screen and (max-width: 550px) {
-    /* Checkbox hack; Prevents open checkbox from displaying 
-        content when scaled above 550px wide screen */
-    input[type=checkbox]:checked ~ .navbar-item {
-        display: block;
-    }
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    list-style: none;
+    display: none;
+}
+
+.nav-menu li:first-child {
+    margin-right: auto;
+    display: block;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+}
+
+.nav-menu li:first-child a:hover {
+    border-bottom: none;
+}
+
+.nav-menu li a:hover {
+    color: #c5192d;
+    border-bottom: 2px solid #c5192d;
+}
+
+nav svg {
+    width: 1.5rem;
+    fill: gray;
+}
+
+#nav-checkbox:checked ~ ul.nav-menu li {
+    display: block;
+}
+
+#nav-checkbox:checked ~ label.nav-toggle .close {
+    display: block;
+}
+
+#nav-checkbox:checked ~ label.nav-toggle .menu {
+    display: none;
 }
 
 /* CONTENT */
@@ -99,41 +139,60 @@ input[type=checkbox] { /* Checkbox hack; hides checkbox from view */
     width: 100%;
 }
 
-section {
-    display: block;
+.page-title {
+    background-color: #c5192d;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
 }
 
-section > .text-content {
-    padding: 1rem;
-    text-align: justify;
+section {
+    display: block;
+    padding: 0 2rem;
 }
 
 section > .image-content > img {
     width: 100%;
+    object-fit: contain;
+}
+
+figure {
+    margin: 0;
 }
 
 figcaption {
     font-size: 1rem;
 }
 
-@media screen and (min-width: 550px) {
+/* FOOTER */
+footer {
+    background-color: #c5192d;
+    color: #ffffff;
+    margin: 2rem auto;
+}
+
+footer p {
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 960px) {
     /* NAVBAR */
-    .navbar{ 
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #5966D9;
+    .nav-toggle {
+        display: none;
     }
 
-    .navbar-item{
-        display: flex;
-        position: relative;
+    .nav-menu {
+        flex-direction: row;
     }
 
-    .nav-button{
-        display:none;
+    .nav-menu li {
+        display: block;
     }
-
+   
     /* CONTENT */
     .container {
         width: 960px;
@@ -142,8 +201,10 @@ figcaption {
 
     section {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
+        gap: 2rem;
+        padding: 0;
     }
     
     section > .text-content {
@@ -156,35 +217,18 @@ figcaption {
         grid-row: 1;
     }
     
-    section:nth-child(even) > .text-content {
+    section:nth-child(odd) > .text-content {
         grid-column: 2;
         grid-row: 1;
     }
     
-    section:nth-child(even) > .image-content {
+    section:nth-child(odd) > .image-content {
         grid-column: 1;
         grid-row: 1;
     }
 
-}
-
-.circularImage {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-}
-
-.firstFlex{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    width: 100vw;
-}
-
-.firstFlex > *{
-    text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
+    /* FOOTER */
+    footer {
+        width: 960px;
+    }
 }

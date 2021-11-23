@@ -10,39 +10,149 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <!--Group title-->
-            <div class="navbar-title">
-                Error 403
-            </div>
-            <!--Invisible checkbox bodge-->
-            <ul class="navbar-list">
-            <input type="checkbox" id="checkbox-toggle" />
-            <label for="checkbox-toggle" class="nav-button">
-                <svg viewBox="0 0 100 80" width="40" height="30">
-                    <rect width="100" height="10"></rect>
-                    <rect y="30" width="100" height="10"></rect>
-                    <rect y="60" width="100" height="10"></rect>
-                  </svg>
+        <nav class="nav">
+            <!--Checkbox for navbar toggle-->
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+            <label for="nav-checkbox" class="nav-toggle">
+                <!-- Må kanskje bruke aria-labeledby istedenfor title i linje 20? -->
+                <svg class="menu" title="bars" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+                        fill="currentColor" />
+                    <path
+                        d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+                        fill="currentColor" />
+                    <path
+                        d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+                        fill="currentColor" />
+                </svg>
+                <!-- Må kanskje bruke aria-labeledby istedenfor title i linje 43? -->
+                <svg class="close" title="times" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                        fill="currentColor" />
+                </svg>
             </label>
-                <!--Navbar items-->
-                <div class="navbar-item">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./accessibility.html">Accessibility</a></li>
-                    <li><a href="./life.html">Life</a></li>
-                    <li><a href="./topical.html">Topical</a></li>
-                    <li><a href="./fun.html">Fun</a></li>
-                </div>
-            </ul>     
+            <ul class="nav-menu">
+                <li>
+                    <a href="./index.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 5H19V19H16L16 8H5V5Z" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 19C12.7614 19 15 16.7614 15 14C15 11.2386 12.7614 9 10 9C7.23858 9 5 11.2386 5 14C5 16.7614 7.23858 19 10 19ZM10 16C11.1046 16 12 15.1046 12 14C12 12.8954 11.1046 12 10 12C8.89543 12 8 12.8954 8 14C8 15.1046 8.89543 16 10 16Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./interesting.html">Interesting stories</a></li>
+                <li><a href="./reality.html">Reality</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./accessibility.html">Accessibility</a></li>
+            </ul>
         </nav>
     </header>
-    <div class="firstFlex">    
-        <h1>Welcome</h1>
+    <main>
+        <div class="container">
+            <div class="page-title">
+                <h1>Welcome to our DATA1200 final exam</h1>
+            </div>
+        <section>
+            <div class="text-content">
+                <h2>So why the war stories?</h2>
+                <p>
+                    Having read both the tasks and announcements regarding the content of the page itself, we concluded that we would rather write about some interesting World War 2 stories as filler text instead of using lorem ipsum or other filler text.                   
+                </p>
+                <p>
+                    Lorem Ipsum is difficult to read and use as filler text as its hard to visualise and understand the context of filler text itself, and to find reasonable headings and other semantic tags to use
+                </p>
+            </div>
+            <figure class="image-content">
+                <img 
+                    src="https://www.oslomet.no/var/oslomet/storage/images/4/9/7/0/260794-1-nor-NO/P35-OsloMet-2400x1200px-42220350540_ef5372fc71_o.jpg" 
+                    alt="Building with prominent OsloMet logo"
+                    class="grayscale"
+                >
+                <figcaption>
+                    OsloMet.
+                    Picture retrieved from <a href="#" target="_blank">Somewhere</a>.
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <div class="text-content">
+                <h2>Why not then just write the assignment?</h2>
+                <p>
+                    The group really struggled to find inspiration to write about our experience as first year students at Oslomet, and we preferred to write about something else that had no relevance to university life.                
+                </p>
+                <p>
+                    The choice of World War 2 comes from an interest in preserving history itself, and we chose to take some interesting stories, anecdotes and perhaps myths, present them in an interesting way and finally take a look at the reality behind these stories.
+                </p>
+
+            </div>
+            <figure class="image-content">
+                <img 
+                    src="https://www.oslomet.no/var/oslomet/storage/images/4/9/7/0/260794-1-nor-NO/P35-OsloMet-2400x1200px-42220350540_ef5372fc71_o.jpg" 
+                    alt="Building with prominent OsloMet logo"
+                    class="grayscale"
+                >
+                <figcaption>
+                    OsloMet.
+                    Picture retrieved from <a href="#" target="_blank">Somewhere</a>.
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <div class="text-content">
+                <h2>Making something interesting</h2>
+                <p>
+                    With the content behind cohesive to a topic, its easier to show our understanding of correct semantic tags use, and to make a webpage that not only looks and works good, but has reader value as well.
+                </p>
+                <p>
+                    We sent an email regarding deviating from writing about our experience as freshmen at Oslomet, and received permission to instead write about World War 2, as it is easier to make the webpage thematically coherent and interesting this way.
+                </p>
+            </div>
+            <figure class="image-content">
+                <img 
+                    src="https://www.oslomet.no/var/oslomet/storage/images/4/9/7/0/260794-1-nor-NO/P35-OsloMet-2400x1200px-42220350540_ef5372fc71_o.jpg" 
+                    alt="Building with prominent OsloMet logo"
+                    class="grayscale"
+                >
+                <figcaption>
+                    OsloMet.
+                    Picture retrieved from <a href="#" target="_blank">Somewhere</a>.
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <div class="text-content">
+                <h2>Remembering != glorifying</h2>
+                <p>
+                    War is a brutal endevour best sought to be avoided, however behind the brutality there often is humanity. The stories we selected are not directly combat stories, rather anecdotes of some of the common myths, and interesting stories.           
+                </p>
+                <p>
+                    We do not take any political stake in the events, and any errors in reproduction of these stories are ours and not in any way related to any sources we have used. We pick no sides and make no association with any organisations or entities involved in the conflict.
+                </p>
+            </div>
+            <figure class="image-content">
+                <img 
+                    src="https://www.oslomet.no/var/oslomet/storage/images/4/9/7/0/260794-1-nor-NO/P35-OsloMet-2400x1200px-42220350540_ef5372fc71_o.jpg" 
+                    alt="Building with prominent OsloMet logo"
+                    class="grayscale"
+                >
+                <figcaption>
+                    OsloMet.
+                    Picture retrieved from <a href="#" target="_blank">Somewhere</a>.
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
         <p>
-            Welcome to our student page. Here we describe a bit about our lives as freshmen at OsloMet. 
-            You will find links to other fun things in the navigation bar at the top.
+            This website does not seek to glorify the horrendous actions committed during World War II, 
+            and does in no way reflect opinions or values of OsloMet or the students behind it.
         </p>
-        <img class="circularImage" src="./assets/images/oslomet.jpg" alt="Image of the Oslomet reversed V logo and a tall campus building">
-    </div>
+    </footer>
 </body>
-</html>
