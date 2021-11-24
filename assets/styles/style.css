@@ -1,13 +1,29 @@
-@font-face {
-    font-family: "Lato";
-    font-display: swap;
-    src: url("../fonts/Lato-Regular.ttf");
+:root {
+    --black: #000000;
+    --gray: #C9C9C9;
+    --red: #C5192D;
+    --white: #FFFFFF;
 }
 
 @font-face {
-    font-family: "RobotoSlab";
     font-display: swap;
-    src: url("../fonts/RobotoSlab-Bold.ttf");
+    font-family: "Lato";
+    font-weight: 400;
+    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Lato";
+    font-weight: 700;
+    src: url("../fonts/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "RobotoSlab";
+    font-weight: 700;
+    src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
 }
 
 /* GENERAL CONFIGURATION */
@@ -30,13 +46,13 @@ p {
 }
 
 a {
-    color: black;
+    color: var(--black);
     font-weight: 700;
     text-decoration-style: solid;
 }
 
 a:hover {
-    color: #c5192d;
+    color: var(--red);
     text-decoration-style: dashed;
 }
 
@@ -68,13 +84,9 @@ figcaption > cite {
     font-style: normal;
 }
 
-iframe {
-    border: none;
-}
-
 /* NAVBAR */
 header{
-    background-color: #c9c9c9;
+    background-color: var(--gray);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,8 +111,8 @@ header{
 }
 
 .nav {
-    background-color: #FFFFFF;
-    border-bottom: 3px solid #000000;
+    background-color: var(--white);
+    border-bottom: 3px solid var(--black);
     padding: 1rem;
 }
 
@@ -149,16 +161,15 @@ header{
 }
 
 .nav-menu li a.selected {
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid var(--black);
 }
 
 .nav-menu li a:hover {
-    border-bottom: 2px solid #c5192d;
-    color: #c5192d;
+    border-bottom: 2px solid var(--red);
+    color: var(--red);
 }
 
 nav svg {
-    fill: gray;
     width: 1.5rem;
 }
 
@@ -180,8 +191,8 @@ nav svg {
 }
 
 .page-title {
-    background-color: #c5192d;
-    color: #ffffff;
+    background-color: var(--red);
+    color: var(--white);
     margin: 2rem 0;
     padding: 2rem;
     text-align: center;
@@ -197,10 +208,6 @@ section > .image-content > img {
     width: 100%;
 }
 
-section > .image-content > iframe {
-    width: 100%;
-}
-
 figure {
     margin: 0;
 }
@@ -211,8 +218,8 @@ figcaption {
 
 /* FOOTER */
 footer {
-    background-color: #c5192d;
-    color: #ffffff;
+    background-color: var(--red);
+    color: var(--white);
     margin: 2rem auto;
 }
 
@@ -239,7 +246,6 @@ footer p {
 
 @media screen and (min-width: 1080px) {
     /* NAVBAR */
-
     header {
         height: 300px;
     }
