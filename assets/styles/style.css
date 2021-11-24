@@ -81,19 +81,19 @@ header{
 }
 
 .bg-enterprise {
-    background-image: url("../images/enterprise_header_image.png");
+    background-image: url("../images/enterprise_header_image.webp");
 }
 
 .bg-glorious {
-    background-image: url("../images/glorious_header.jpg");
+    background-image: url("../images/glorious_header.webp");
 }
 
 .bg-skk {
-    background-image: url("../images/SKK_header.png");
+    background-image: url("../images/SKK_header.webp");
 }
 
 .bg-shinano {
-    background-image: url("../images/shinano_header.jpg");
+    background-image: url("../images/shinano_header.webp");
 }
 
 .nav {
