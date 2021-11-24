@@ -4,86 +4,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DATA1200 Final Assignment. WW2 Stories.">
+    <!-- Normalize.css only targets relevant CSS to ensure consistency cross browser
+         MIT License | github.com/necolas/normalize.css  -->
     <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <!-- DATA1200 Final Assignment Stylesheet -->
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Document</title>
+    <title>Fish 'n' ships - Reality</title>
 </head>
 <body>
-    <header class="bg-interesting">
+    <header class="bg-skk">
         <nav class="nav">
-            <!--Checkbox for navbar toggle-->
-            <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
-            <label for="nav-checkbox" class="nav-toggle">
-                <!-- Må kanskje bruke aria-labeledby istedenfor title i linje 20? -->
-                <svg class="menu" title="bars" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
-                        fill="currentColor" />
-                    <path
-                        d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
-                        fill="currentColor" />
-                    <path
-                        d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
-                        fill="currentColor" />
-                </svg>
-                <!-- Må kanskje bruke aria-labeledby istedenfor title i linje 43? -->
-                <svg class="close" title="times" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
-                        fill="currentColor" />
-                </svg>
-            </label>
-            <ul class="nav-menu">
-                <li>
-                    <a href="./index.html">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 5H19V19H16L16 8H5V5Z" fill="currentColor" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M10 19C12.7614 19 15 16.7614 15 14C15 11.2386 12.7614 9 10 9C7.23858 9 5 11.2386 5 14C5 16.7614 7.23858 19 10 19ZM10 16C11.1046 16 12 15.1046 12 14C12 12.8954 11.1046 12 10 12C8.89543 12 8 12.8954 8 14C8 15.1046 8.89543 16 10 16Z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                </li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./interesting.html">Interesting stories</a></li>
-                <li><a href="./reality.html">Reality</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./accessibility.html">Accessibility</a></li>
-            </ul>
+            <div class="container">
+                <!--Checkbox for navbar toggle-->
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+                <label for="nav-checkbox" class="nav-toggle">
+                    <svg class="menu" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title lang="en">Menu</title>
+                        <path
+                            d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+                            fill="currentColor" />
+                        <path
+                            d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+                            fill="currentColor" />
+                        <path
+                            d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+                            fill="currentColor" />
+                    </svg>
+                    <svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title lang="en">Close</title>
+                        <path
+                            d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                            fill="currentColor" />
+                    </svg>
+                </label>
+                <ul class="nav-menu">
+                    <li>
+                        <a title="Home" href="./index.html">
+                            Fish 'n' Ships
+                        </a>
+                    </li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./interesting.html">Interesting Stories</a></li>
+                    <li><a href="./reality.html" class="selected"><span class="sr-only">Current Page: </span>Reality</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <div class="container">
             <div class="page-title">
-                <h1>Explaining the stories</h1>
+                <h1>Reality Behind the Stories</h1>
             </div>
         <section>
             <div class="text-content">
-                <h2>Friendly fire</h2>
+                <h2>Not so friendly fire</h2>
                 <p>
-                    Friendly fire is a real issue in combat, and stories of American aircraft harrassing allied troops are plenty. In one case,   <q cite ="https://nationalinterest.org/blog/reboot/friendly-fire-normandy-us-bombers-massacred-hundreds-us-army-troops-172538">enraged troops of the 120th Infantry Regiment even opened fire on the American planes.</q>  
+                    Friendly fire is a real issue in combat, and stories of American aircraft harrassing allied troops are plenty. In
+                    one case, <q cite="https://nationalinterest.org/blog/reboot/friendly-fire-normandy-us-bombers-massacred-hundreds-us-army-troops-172538">enraged
+                    troops of the 120th Infantry Regiment even opened fire on the American planes. </qcite=>
                 </p>
                 <p>
-                    Lorem Ipsum is difficult to read and use as filler text as its hard to visualise and understand the context of filler text itself, and to find reasonable headings and other semantic tags to use
+                    It was in this operation that the highest ranking US officer, General McNair, was killed in the war. He was killed
+                    by his own strategic bombers dropping short.
+                </p>
+                <p>
+                    There were other notable cases of air to ground friendly fire, one including some British <abbr title="Royal Air Force">RAF</abbr> Hurricanes strafed out
+                    a spectator stand during a tactical air firepower demonstration at the Imber training grounds. You can read more
+                    about this incident <a href="http://web.archive.org/web/20140411134842/http://www.communigate.co.uk/wilts/wiltshistoricalmilitarysociety/page17.phtml">here.</a>
+                </p>
+                <p>
+                    In the case of the Imber demonstration incident, there were multiple factors leading up to the incident. A
+                    combination of bad sight, insufficient breifing and missing markings for the no-fire zone led to the pilot engaging
+                    the spectator stand instead of dummy targets.
                 </p>
             </div>
             <figure class="image-content">
                 <img 
-                    src="https://www.oslomet.no/var/oslomet/storage/images/4/9/7/0/260794-1-nor-NO/P35-OsloMet-2400x1200px-42220350540_ef5372fc71_o.jpg" 
-                    alt="Building with prominent OsloMet logo"
-                    class="grayscale"
+                    src="./assets/images/B17_bombing_run.jpg" 
+                    alt="Picture of quad engine B-17 strategic bombers dropping bombs through clouds"
                 >
                 <figcaption>
-                    OsloMet.
-                    Picture retrieved from <a href="#" target="_blank">Somewhere</a>.
+                    B-17 "Flying Fortress" squadron dropping bombs
+                    Picture retrieved from <a href="https://en.wikipedia.org/wiki/Boeing_B-17_Flying_Fortress#/media/File:B-17G_formation_on_bomb_run.jpg" target="_blank">Wikipedia</a>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <div class="text-content">
+                <h2>Experience and training</h2>
+                <p>
+                    While it may seem like some of our anecdotes are mocking the Americans, we do need to keep in mind some of the context behind each very event. In the end, the Americans didn't have an exceedingly large amount of friendly fire
+                    incidents compared to their contemporaries.
+                </p>
+                <p>
+                    What the Americans did implement for their forces was for any Private soldier to be able to call in fire support for their units and the American air and firepower superiority they enjoyed during after the Normandy landings.
+                </p>
+                <p>
+                    Another contributing factor could be the fighter jockey mentality. With the German Luftwaffe being all but a relic of the past with few planes ready for combat, pilots eager to get to fight Germany's best would find only disappointment.
+                    <figure>
+                        <blockquote>
+                            <p>
+                                Total number of Luftwaffe sorties flown on 6 June 1944 was only about 100 missions, nearly all by fighters or fighter
+                                reconnaissance aircraft. Conversely, over three thousand Allied fighters and ground attack aircraft formed a dense
+                                protective umbrella over the Normandy beachheads and extended their operational areas deep into France as the
+                                beachheads were consolidated.
+                            </p>
+                        </blockquote>
+                        <figcaption>
+                            <cite>
+                                <a href="https://theavgeeks.com/2019/06/06/the-luftwaffe-response-at-normandy/">Source for above citation
+                                </a>
+                            </cite>
+                        </figcaption>
+                    </figure>
+                </p>
+            </div>
+            <figure class="image-content">
+                <img 
+                    src="./assets/images/b17_formation_flying.jpg" 
+                    alt="Picture of a dozen B-17 flying fortress quad engine heavy bombers flying in formation with a clouded sky in the background">
+                <figcaption>
+                    A formation of B-17 "Flying Fortress" strategic bombers of the 398th Bombardment Group flying a mission over Germany, 1945
+                    Picture retrieved from <a href="https://en.wikipedia.org/wiki/Boeing_B-17_Flying_Fortress#/media/File:Living_Legends.jpg" target="_blank">Wikipedia</a>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <div class="text-content">
+                <h2>All guns blazing</h2>
+                <p>
+                    With a lack of aerial targets to engage, many US fighter pilots (and planes not designed for the ground attack role)
+                    were pushed into the ground attack role, with the expected detriment to precision expected.
+                </p>
+                <p>
+                    There were tests conducted against a Panther tank painted white with the utmost of visibility conditions (and no
+                    angry Germans shooting back). Hit probability against the most perfect of targets from the air turned out to be 5%.
+                </p>
+                <p>
+                    This statistic illustrates the difficulty in just hitting a target, let along identifying its model, identifying
+                    markings to know if its friend or foe. (there were many captured vehicles pressed into service, especially by the
+                    German military)
+                </p>
+                <p>
+                    Now combine this with the enemy shooting back, and the pilot's interest in not pancaking their plane into the ground
+                    and you can try to visualise how difficult it is to know for sure if you're attacking the enemy.
+                </p>
+            </div>
+            <figure class="image-content">
+                <img 
+                    src="./assets/images/sbd2_dropping_bomb.jpg" 
+                    alt="Picture of SBD-2 Dauntless naval dive bomber with dive/airbrake extended and having just dropped its bomb">
+                <figcaption>
+                    A SBD-2 "Dauntless" dive bomber with dive/airbrakes extended having just released its bomb.
+                    Picture retrieved from <a href="https://en.wikipedia.org/wiki/File:Douglas_SBD_Dauntless_dropping_a_bomb,_circa_in_1942.jpg" target="_blank">Wikipedia</a>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <div class="text-content">
+                <h2>I scream, you scream</h2>
+                <p>
+                    First some context behind the importance of ice cream for the US servicemembers during World War 2: With prohibition
+                    banning the production and sale of alchohol in the US, ice cream had its resurgenc after the suger shortage and
+                    restrictions that came as a result of the first world war.
+                </p>
+                <p>
+                    Ice cream was an important morale boost to US servicemembers during World War 2, providing a reminder of home for
+                    those on long combat deployments far from the comforts of home.
+                </p>
+                <p>
+                    In the case of cutting the line, its a widely repeated story about discipline and waiting your turn, even repeated
+                    nowadays by the US Naval Institute in a <a href="https://twitter.com/NavalInstitute/status/1431628074441977859" target="_blank">tweet.</a>
+                </p>
+                <p>
+                    As for the sinking of Lexington... Well, some people just can't enough of the icy treat...
+                </p>
+            </div>
+            <figure class="image-content">
+                <iframe width="480" height="270" src="https://www.youtube.com/embed/qztY9bSQXcQ", title="USS Lexington Ice Cream Incident" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <figcaption>
+                    World War 2 Veteran Merle Lebbs recalls strange incident during the Battle of the Coral Sea 1942.
+                    Recording from NewsChannel 4, retrieved from <a href="https://www.youtube.com/watch?v=qztY9bSQXcQ" target="_blank">YouTube</a>
                 </figcaption>
             </figure>
         </section>
             <footer>
                 <p>
-                    This website does not seek to glorify the horrendous actions committed during World War II, 
+                    This website does not seek to glorify the horrendous actions committed during World War 2, 
                     and does in no way reflect opinions or values of OsloMet or the students behind it.
                 </p>
             </footer>
