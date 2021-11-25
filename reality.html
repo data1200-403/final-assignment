@@ -15,8 +15,8 @@
                 <!--Checkbox for navbar toggle-->
                 <input type="checkbox" id="nav-checkbox" class="nav-checkbox sr-only" title="Toggle menu">
                 <label for="nav-checkbox" class="nav-toggle" aria-hidden="true">
-                    <svg class="menu" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <!-- SVG from https://css.gg/menu -->
+                    <svg class="menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <title lang="en">Open menu</title>
                         <path
                             d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
@@ -28,8 +28,8 @@
                             d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
                             fill="currentColor" />
                     </svg>
-                    <svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <!-- SVG from https://css.gg/close -->
+                    <svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <title lang="en">Close menu</title>
                         <path
                             d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
@@ -37,11 +37,7 @@
                     </svg>
                 </label>
                 <ul class="nav-menu">
-                    <li>
-                        <a title="Home" href="./index.html">
-                            Fish 'n' Ships
-                        </a>
-                    </li>
+                    <li><a title="Home" href="./index.html">Fish 'n' Ships</a></li>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./interesting.html">Interesting Stories</a></li>
                     <li><a href="./reality.html" class="selected"><span class="sr-only">Current Page: </span>Reality</a></li>
@@ -60,8 +56,9 @@
                 <div class="text-content">
                     <h2>Not so friendly fire</h2>
                     <p>
-                        Friendly fire is a real issue in combat, and stories of American aircraft harrassing allied troops are plenty. During Operation Cobra, <q cite="https://nationalinterest.org/blog/reboot/friendly-fire-normandy-us-bombers-massacred-hundreds-us-army-troops-172538">enraged
-                        troops of the 120th Infantry Regiment even opened fire on the American planes. </q>
+                        Friendly fire is a real issue in combat, and stories of American aircraft harrassing allied troops are plenty.
+                        During Operation Cobra, <q cite="https://nationalinterest.org/blog/reboot/friendly-fire-normandy-us-bombers-massacred-hundreds-us-army-troops-172538">enraged
+                            troops of the 120th Infantry Regiment even opened fire on the American planes. </q>
                     </p>
                     <p>
                         It was in this operation that the highest ranking US officer, General McNair, was killed in the war. He was killed
@@ -69,7 +66,8 @@
                         You can read more about the story <a href="https://www.washingtonpost.com/news/checkpoint/wp/2016/06/06/the-little-known-d-day-operation-that-accidentally-killed-more-than-100-u-s-troops/">here.</a>
                     </p>
                     <p>
-                        There were other notable cases of air to ground friendly fire, one including some British <abbr title="Royal Air Force">RAF</abbr> Hurricanes strafed out
+                        There were other notable cases of air to ground friendly fire, one including some British <abbr
+                            title="Royal Air Force">RAF</abbr> Hurricanes strafed out
                         a spectator stand during a tactical air firepower demonstration at the Imber training grounds. You can read more
                         about this incident <a href="http://web.archive.org/web/20140411134842/http://www.communigate.co.uk/wilts/wiltshistoricalmilitarysociety/page17.phtml">here.</a>
                     </p>
@@ -94,14 +92,18 @@
                 <div class="text-content">
                     <h2>Experience and training</h2>
                     <p>
-                        While it may seem like some of our anecdotes are mocking the Americans, we do need to keep in mind some of the context behind each very event. In the end, the Americans didn't have an exceedingly large amount of friendly fire
+                        While it may seem like some of our anecdotes are mocking the Americans, we do need to keep in mind some of the
+                        context behind each very event. In the end, the Americans didn't have an exceedingly large amount of friendly fire
                         incidents compared to their contemporaries.
                     </p>
                     <p>
-                        What the Americans did implement for their forces was for any Private soldier to be able to call in fire support for their units and the American air and firepower superiority they enjoyed during after the Normandy landings.
+                        What the Americans did implement for their forces was for any Private soldier to be able to call in fire support for
+                        their units and the American air and firepower superiority they enjoyed during after the Normandy landings.
                     </p>
                     <p>
-                        Another contributing factor could be the fighter jockey mentality. With the German Luftwaffe being all but a relic of the past with few planes ready for combat, pilots eager to get to fight Germany's best would find only disappointment.
+                        Another contributing factor could be the fighter jockey mentality. With the German Luftwaffe being all but a relic
+                        of the past with few planes ready for combat, pilots eager to get to fight Germany's best would find only
+                        disappointment.
                     </p>
                     <figure>
                         <blockquote>
@@ -140,7 +142,8 @@
                     </p>
                     <p>
                         There were tests conducted against a Panther tank painted white with the utmost of visibility conditions (and no
-                        angry Germans shooting back). Live fire tests conducted with rockets. Hit probability against the most perfect of targets from the air turned out to be around 5%.
+                        angry Germans shooting back). Live fire tests conducted with rockets. Hit probability against the most perfect of
+                        targets from the air turned out to be around 5%.
                     </p>
                     <p>
                         This statistic illustrates the difficulty in just hitting a target, let along identifying its model, identifying

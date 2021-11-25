@@ -7,18 +7,17 @@
     <meta name="description" content="DATA1200 Final Assignment. WW2 Stories.">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Fish 'n' Ships - Gallery</title>
+    <script src="./assets/js/gallery.js"></script>
 </head>
 <body>
-    <input type="button" value="Dark Mode" id="switchBtn" onclick="changeTheme();">
-    <script src="fun.js"></script>
     <header class="bg-skk">
         <nav class="nav">
             <div class="container">
                 <!--Checkbox for navbar toggle-->
                 <input type="checkbox" id="nav-checkbox" class="nav-checkbox sr-only" title="Toggle menu">
                 <label for="nav-checkbox" class="nav-toggle" aria-hidden="true">
-                    <svg class="menu" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <!-- SVG from https://css.gg/menu -->
+                    <svg class="menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <title lang="en">Open menu</title>
                         <path
                             d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
@@ -30,8 +29,8 @@
                             d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
                             fill="currentColor" />
                     </svg>
-                    <svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <!-- SVG from https://css.gg/close -->
+                    <svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <title lang="en">Close menu</title>
                         <path
                             d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
@@ -39,10 +38,16 @@
                     </svg>
                 </label>
                 <ul class="nav-menu">
+                    <li><a title="Home" href="./index.html">Fish 'n' Ships</a></li>
                     <li>
-                        <a title="Home" href="./index.html">
-                            Fish 'n' Ships
-                        </a>
+                        <!-- SVG from https://css.gg/dark-mode -->
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor"
+                            title="Dark Mode" onclick="changeTheme();">
+                            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z"
+                                fill="currentColor" />
+                        </svg>
                     </li>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./interesting.html">Interesting Stories</a></li>
@@ -54,65 +59,137 @@
         </nav>
     </header>
     <main>            
-
-        <div class="gallery-container">
+        <div class="container">
+            <div class="page-title">
+                <h1>Gallery</h1>
+            </div>
             <section class="gallery-section">
+                <h2>Rise of Naval Air Power</h2>
                 <div class="gallery-text">
                     <div class="gallery-text-content">
-                        <h2>hei</h2>
+                        <h3>Flattops</h3>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro error perspiciatis doloribus, sunt maiores non
-                            illum nihil nulla doloremque perferendis. Similique fugiat quos minima labore repellendus ut voluptate hic
-                            earum.
+                            With World War One demonstrating the potential that air power has, with pilots going from throwing rocks (and
+                            insults) to timed machine guns firing through the spinning propellors, it was only natural for aircraft to
+                            eventually find their way onto ships as well.
+                        </p>
+                        <p>
+                            The race to build the first aicraft carriers had begun, and the major naval powers began experimenting with how to
+                            allow planes to take off and land at sea.
+                        </p>
+                        <p>
+                            Well, planes need a takeoff and landing strip to take off, and early biplanes (and even tri-planes!) had very low
+                            stall speeds, being able to, in the right conditions, to almost hover in place if winds were strong enough.
+                        </p>
+                        <p>
+                            So naturally, flight decks were considered for ships, however what <em>kind</em> of ship was a major question.
+                            During the infancy of the <abbr title="Cruiser Voler">CV</abbr> it was the Cruiser hull that set the basis for 
+                            the US Navy hull designation, and the standard that would be seen in use through the English speaking world.
                         </p>
                     </div>
                     <div class="gallery-text-content">
-                        <h3>hei</h3>
+                        <h3>Firepower</h3>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro error perspiciatis doloribus, sunt maiores non
-                            illum nihil nulla doloremque perferendis. Similique fugiat quos minima labore repellendus ut voluptate hic
-                            earum.
+                            Cruisers were generally known to be jack of all trades when it comes to warships, being fast enough, well enough
+                            armoured with good enough firepower.
+                        </p>
+                        <p>
+                            In our first gallery you can see some of the earliest aircraft carriers ever built and tested. While nobody really
+                            knew what the future of naval aviation would be, two main designs appeared:
+                        </p>
+                        <p>
+                            The "battlecarriers" such as Lexington and Kaga, built off battlecruiser hulls and armed with 8in (203mm) and 20cm
+                            guns respectively, these large ships were thought to be able to defend themselves against hostile cruisers while
+                            launching aircraft.
+                        </p>
+                        <p>
+                            The "light" aircraft carriers such as Langley and Houshou were built off lighter ships (Langley was converted from a
+                            collier, Houshou was a purpose designed and built aircraft carrier). The lighter and smaller designs were built
+                            purely as aircraft carriers, to be held well away from surface combat.
                         </p>
                     </div>
                 </div>
+                <p>
+                    In the gallery below, you can see some examples of both battlecarriers and light carriers.
+                </p>
                 <div class="gallery-presentation">
                     <div class="gallery-preview">
-                        <!-- image list -->
+                        <img src="./assets/images/gallery/langley.webp" alt="USS Langley (CV-1)" onclick="viewImage('gallery-one', this);">
+                        <img src="./assets/images/gallery/houshou.webp" alt="IJN Houshou" onclick="viewImage('gallery-one', this);">
+                        <img src="./assets/images/gallery/kaga_early.webp" alt="IJN Kaga with early 3 flight deck configuarion" onclick="viewImage('gallery-one', this);">
+                        <img src="./assets/images/gallery/furious_early.webp" alt="HMS Furious (47) in 1918 with aft landing deck" onclick="viewImage('gallery-one', this);">
                     </div>
-                    <div class="gallery-view">
-                        <!-- image -->
-                    </div>
+                    <figure class="gallery-view">
+                        <img src="./assets/images/gallery/langley.webp" alt="USS Langley (CV-1)" id="gallery-one">
+                        <figcaption id="gallery-one-caption">USS Langley (CV-1)</figcaption>
+                    </figure>
                 </div>
             </section>
             <section class="gallery-section">
+                <h2>Death of the Battleships</h2>
                 <div class="gallery-text">
                     <div class="gallery-text-content">
-                        <h2>hei</h2>
+                        <h3>Better engines, bigger payload</h3>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro error perspiciatis doloribus, sunt maiores non
-                            illum nihil nulla doloremque perferendis. Similique fugiat quos minima labore repellendus ut voluptate hic
-                            earum.
+                            As engine and airframe technology improved, so did their ability to bring heavier bomb and torpedo loads. As the gun
+                            armed ships ruled the seas up to World War One, and missiles rule the skies now, aircraft truly changed the way
+                            battles were fought ever since.
+                        </p>
+                        <p>
+                            Many notable ships were sunk, and battles fought using naval aviation, from the US being dragged into the war with
+                            the Japanese sneak attack on Pearl Harbour, to the destruction of Yamato, the largest battleship class ever built.
+                        </p>
+                        <p>
+                            Similar to the early CVs, once it was made clear flattops were not designed for frontline combat (as an example,
+                            Lexington could not fire her 8in armaments over the deck as the blast would damage the flight deck itself) the
+                            designs again continued along two distinct paths.
                         </p>
                     </div>
                     <div class="gallery-text-content">
-                        <h3>hei</h3>
+                        <h3>Two notable developments</h3>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro error perspiciatis doloribus, sunt maiores non
-                            illum nihil nulla doloremque perferendis. Similique fugiat quos minima labore repellendus ut voluptate hic
-                            earum.
+                            The "fleet carrier" (USN hull designation CV) were the larger of the types, with many able to carry and launch over
+                            60 planes.
+                        </p>
+                        <p>
+                            The other type were the "light" and "escort" carriers (USN hull designation CVL and CVE respectively). These were
+                            lighter, smaller carriers with much smaller capacity, however were cheaper and faster to build.
+                        </p>
+                        <p>
+                            The major upside to to more, but smaller flattops was that each loss of a ship meant fewer planes lost, and each
+                            additional flight deck meant faster "cycling" of aircraft, as each flight deck can only take off or land one plane
+                            at the same time.
+                        </p>
+                        <p>
+                            A fleet of 5 CVLs with 20 planes each can launch its wave of 100 aircraft faster, which means less waiting around
+                            for the first planes to take off and thus less need for fuel. More flight decks also means one can be used to cycle
+                            combat air patrols that protect and scout for the fleet.
                         </p>
                     </div>
                 </div>
+                <p>
+                    In the gallery below, you can see some examples of carriers seen later in the war.
+                </p>
                 <div class="gallery-presentation">
                     <div class="gallery-preview">
-                        <!-- image list -->
+                        <img src="./assets/images/gallery/ark_royal.webp" alt="HMS Ark Royal (91)" onclick="viewImage('gallery-two', this);">
+                        <img src="./assets/images/gallery/enterprise_cv6.webp" alt="USS Enterprise (CV-6)" onclick="viewImage('gallery-two', this);">
+                        <img src="./assets/images/gallery/hiryuu.webp" alt="IJN Hiryuu" onclick="viewImage('gallery-two', this);">
+                        <img src="./assets/images/gallery/zuihou.webp" alt="IJN Zuihou" onclick="viewImage('gallery-two', this);">
                     </div>
-                    <div class="gallery-view">
-                        <!-- image -->
-                    </div>
+                    <figure class="gallery-view">
+                        <img src="./assets/images/gallery/ark_royal.webp" alt="HMS Ark Royal (91)" id="gallery-two">
+                        <figcaption id="gallery-two-caption">HMS Ark Royal (91)</figcaption>
+                    </figure>
                 </div>
             </section>
         </div>
     </main>
+    <footer>
+        <p>
+            This website does not seek to glorify the horrendous actions committed during World War 2, 
+            and does in no way reflect opinions or values of OsloMet or the students behind it.
+        </p>
+    </footer>
     </body>  
 </html>
