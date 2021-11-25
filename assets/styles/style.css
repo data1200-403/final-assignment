@@ -33,11 +33,6 @@
     src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
 }
 
-/* GALLERY */
-input{
-    display: none;
-}
-
 /* GENERAL CONFIGURATION */
 html {
     font-size: 16px;
