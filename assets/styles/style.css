@@ -63,6 +63,7 @@ h1 {
 
 p {
     max-width: 70ch;
+    margin: 1rem 0;
 }
 
 a {

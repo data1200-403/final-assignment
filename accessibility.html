@@ -7,6 +7,7 @@
     <meta name="description" content="DATA1200 Final Assignment. WW2 Stories.">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Fish 'n' Ships - Accessibility</title>
+    <script src="./assets/js/app.js"></script>
 </head>
 <body>
     <header class="bg-shinano">
@@ -14,7 +15,7 @@
             <div class="container">
                 <!--Checkbox for navbar toggle-->
                 <input type="checkbox" id="nav-checkbox" class="nav-checkbox sr-only" title="Toggle menu">
-                <label for="nav-checkbox" class="nav-toggle" aria-hidden="true">
+                <label for="nav-checkbox" class="nav-toggle" onkeypress="toggleMenu()" tabindex="1">
                     <!-- SVG from https://css.gg/menu -->
                     <svg class="menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <title lang="en">Open menu</title>
