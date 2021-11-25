@@ -35,10 +35,16 @@ body {
     font-family: Lato, sans-serif;
     font-size: 1.2rem;
     line-height: 1.5;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: RobotoSlab, serif;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
 }
 
 p {
@@ -264,7 +270,7 @@ footer p {
         margin: 0 auto;
         width: 960px;
     }
-    
+
     section {
         align-items: center;
         display: grid;
