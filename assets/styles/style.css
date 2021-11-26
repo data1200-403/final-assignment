@@ -239,6 +239,7 @@ section > .image-content > img {
 
 figure {
     margin: 0;
+    padding: 1rem;
 }
 
 figcaption {
@@ -361,6 +362,10 @@ footer p {
     section:nth-child(odd) > .image-content {
         grid-column: 1;
         grid-row: 1;
+    }
+
+    figure {
+        padding: 0;
     }
 
     /* FOOTER */
