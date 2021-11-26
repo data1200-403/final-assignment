@@ -57,15 +57,9 @@
                 <div class="text-content">
                     <h2>Introduction</h2>
                     <p>
-                        During development, we decided on a simple layout. We developed with mobile first
-                        mentality, and made a single column layout with text followed by image. On tablet sized screens (650-1080px) we
-                        made images smaller and increased the deadspace on the borders to increase readability without
-                        excesssive scrolling.
-                    </p>
-                    <p>
-                        On larger screens we considered the possibility of users having ultra-wide displays and limited the width of the
-                        content to 960px, preventing content from eating excessive space on large screens. Otherwise
-                        this is a two column layout.
+                        We chose a simple layout, starting mobile first and made a single-column layout, text followed by image. On tablets (650-1080px) we
+                        made images smaller and increased the deadspace of borders to increase readability without
+                        excesssive scrolling. We limited max width to 960px to enhance readability on wide screens. Otherwise this is a two-column layout.
                     </p>
                 </div>
                 <figure class="image-content">
@@ -82,15 +76,12 @@
                     <h2>Accessibility auto-check</h2>
                     <p>
                         We used <a href="https://wave.webaim.org/" target="_blank">Wave by WebAIM</a> and <a href="https://achecks.ca/achecker" target="_blank">AChecker</a> 
-                        to assess our primary four pages (not Gallery as this is our equivalent to the "fun" page)
-                        to the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 AAA standard.
+                        to assess our primary four pages (not Gallery) to the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 standard.
                     </p>
                     <p>
-                        All our pages passed this test with only one known problem. The navbar has a duplicate link to the
-                        homepage. This is a compromise with <abbr title="Universal Design">UD</abbr> in mind, as people find different things intuitive. We have also
-                        found this type of duplicate (logo/dedicated entry) is normal amongst bigger websites. For any other
-                        potential problems/warnings, we went over them and concluded that items such as missing sitemap and
-                        changing text directions were not relevant to our site.
+                        All our pages passed these tests with only one known problem. The navbar has a duplicate link to the
+                        homepage. This is a compromise with <abbr title="Universal Design">UD</abbr> in mind, as people find different
+                        things intuitive. This is common among bigger websites. For other warnings, we consider them within guidelines.
                     </p>
                 </div>
                 <figure class="image-content">
@@ -106,18 +97,16 @@
                 <div class="text-content">
                     <h2>Human review</h2>
                     <p>
-                        We checked the colour contrast of our red heading backgrounds and found that the original colour <span id="C5192D">#C5192D</span> did not
-                        meet the AAA standard, so we changed to <span id="B01527">#B01527</span> which fulfills AAA requirement.
+                        We checked the colour contrast of our red heading backgrounds and found the original colour <span id="C5192D">#C5192D</span> did not
+                        meet the AAA standard, so we changed to <span id="B01527">#B01527</span> which complies.
                     </p>
                     <p>
-                        Our page has only one distinct colour and that is the red used in the banners and hovered links. We have done a
-                        manual colour check with various settings for color vision deficiency and it appears contrast is fine and should
-                        cause no conflict.
+                        Our page has only one distinct colour and that is the red used in the banners and hovered links. We performed a
+                        manual check with various settings for colour vision deficiency and causes no conflict.
                     </p>
                     <p>
-                        Our choice of text size meets the AAA standard, and with the limit of 70 characters per line. There are no
-                        issues scaling the size of the page to even 300% of the original size. No content or formatting is lost thanks to
-                        the responsive design that swaps to the smaller tablet and mobile versions.
+                        Our choice of text size meets the AAA standard. With a limit of 70 characters per line, there are no issues scaling the 
+                        size of the page to 300% size. No content or formatting is lost due to responsive design swapping to the smaller versions.
                     <p>
                 </div>
                 <figure class="image-content">
@@ -134,12 +123,12 @@
                     <h2>Screen readers</h2>
                     <p>
                         We did manual screen reader testing with both native Windows and Mac narrators. While challenging to learn,
-                        we found the narrators followed the natural order of content. Notably we also have the "current page" spoken in the
+                        we found the narrators followed the natural order of content. Notably, the "current page" is spoken in the
                         relevant navigation link as well as a toggleable mobile menu through the screen reader.
                     </p>
                     <p>
-                        We tried to navigate around the pages using keyboard only, and were not able to trap ourselves, or fail to access
-                        any part of the pages including opening all links in new tabs. 
+                        We tried to navigate the pages keyboard only, and were not able to trap ourselves, or fail to access
+                        any part of the pages including opening all links. 
                     </p>
                 </div>
                 <figure class="image-content">
@@ -155,9 +144,14 @@
                 <div class="text-content">
                     <h2>Specific decisions</h2>
                     <p>
-                        We replaced a Youtube embed, after verifying the automatic CCs being acceptable, with an image due to page loading
-                        concerns on mobile devices through <a href="https://pagespeed.web.dev/" target="_blank">PageSpeed Insights</a>. We
-                        also changed all our images to WEBP format to adhere to modern standards and reduce bandwidth usage.
+                        We replaced a Youtube embed after verifying the automatic CCs being acceptable, with an image due to mobile page loading concerns 
+                        through <a href="https://pagespeed.web.dev/" target="_blank">PageSpeed Insights</a>. We reformatted all images to WEBP format to 
+                        adhere to modern standards and reduce bandwidth usage.
+                    </p>
+                    <p>
+                        We could not implement a mechanism to pre-allocate space for responsive images as width/height in HTML would not
+                        suffice. We omitted this step having not learned how, as grid layout means minimal displacement anyway. The
+                        images are as small as possible in WEBP and this issue is negligible.
                     </p>
                 </div>
                 <figure class="image-content">
